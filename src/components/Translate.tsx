@@ -60,13 +60,11 @@ export const Translate = () => {
       </div>
       <div>
         <textarea
-          cols="45"
-          rows="10"
           onInput={(e: any) => setInput(e.target.value)}
         ></textarea>
       </div>
       <div>
-        <textarea readOnly cols="45" rows="10" value={output}></textarea>
+        <textarea readOnly value={output}></textarea>
       </div>
       <div>
         <button onClick={e => translateBtn()}><a>Translate</a></button>
